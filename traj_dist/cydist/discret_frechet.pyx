@@ -48,6 +48,6 @@ def c_discret_frechet(np.ndarray[np.float64_t,ndim=2] t0, np.ndarray[np.float64_
             x1=t1[j-1,0]
             y1=t1[j-1,1]
             C[i,j]=fmax(c_eucl_dist(x0,y0,x1,y1),fmin(fmin(C[i,j-1],C[i-1,j-1]),C[i-1,j]))
-    dfr = C[n0-1,n1-1]
-    return dfr
+    dfw = C[n0-1,n1-1]
+    return dfw
 
